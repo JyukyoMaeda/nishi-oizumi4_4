@@ -37,7 +37,7 @@
         @include mq(tb){
             transition: all 0.5s ease-in-out;
             &:hover{
-                transform: scale(.95);
+                transform: scale(1.05);
                 transition-duration: 0.2s;
                 // box-shadow: 1px 1px 4px 0px $item-hover--bg;
             }
@@ -46,7 +46,7 @@
     &.-p04{
         display: block;
         width: 100%;
-        border: 1px solid white;
+        // border: 1px solid white;
         transition: all .5s;
         overflow: hidden;
         img{
@@ -125,6 +125,42 @@
             }
         }
     }
+    &.-p06{
+        display: block;
+        transform: scale(1);
+        transition-duration: 0.5s;
+        overflow: hidden;
+        @include mq(tb){
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                transform: scale(1.15);
+                transition-duration: 0.2s;
+            }
+        }
+    }
+    &.-p-colorBox{
+        border-radius: 30px;
+        transition: all .5s;
+        &.--black{
+            background: black;
+            border: 1px solid black;
+            &:hover{
+                background: rgb(97, 97, 97);
+                border: 1px solid rgb(255, 255, 255);
+            }
+        }
+        &.--red{
+            background: red;
+            border: 1px solid red;
+            &:hover{
+                background: rgb(134, 34, 34);
+                border: 1px solid rgb(134, 30, 30);
+            }
+        }
+    }
+
+
+
 
 
     &.-contact{
@@ -137,7 +173,7 @@
             &:hover{
                 transform: scale(.95);
                 transition-duration: 0.2s;
-                // box-shadow: 1px 1px 4px 0px $item-hover--bg;
+
             }
         }
     }
@@ -169,7 +205,7 @@
     }
     &.-underLine{
         position: relative;
-        padding: 5px 5px 8px; 
+        padding: 5px 5px 8px;
         margin-bottom: 13px;
         @media screen and (max-width: 768px){
             line-height: 1.2;
@@ -198,7 +234,7 @@
                 transform: scale(0, 1);
                 transform-origin: left top;
                 transition: transform 0.5s;
-                }
+            }
             &:hover{
                 background: $yellow-b;
                 &::after {
@@ -210,19 +246,19 @@
             padding: 4% 5px 3%;
         }
     }
-    &.-greenBgBtn{
+    &.-greenBgBtn {
         color: $main-color--w;
         background: $contactBtn-color--bg;
         width: 50%;
         border-radius: 50px;
-        @include mq(tb){
+        @include mq(tb) {
             max-width: 292.318px;
         }
-        img{
+        img {
 			@media screen and (min-width: 767px){
 				opacity: 1;
 				transition: all 0.3s ease-in-out;
-				&:hover{
+				&:hover {
 					opacity: .7;
 				}
 			}
@@ -298,22 +334,15 @@
     }
 }
 
-.l-linkText{
-    font-size: 10px;
-    color: $main-color--b;
-    margin-right: -3%;
-    transition: all .5s;
-    @include mq(tb){
-        font-size: 12px;
-        margin-right: 2%;
-    }
-    &:hover{
-        color: $main-color--gray;
-    }
-    &.-p02{
-        margin-right: -2%;
-        @include mq(tb){
-            margin-right: 2%;
-        }
-    }
-}
+// .l-linkText{
+//     color: $main-color--b;
+//     transition: all .5s;
+//     @include mq(tb){
+//     }
+//     &:hover{
+//         color: $main-color--gray;
+//     }
+//     &.-p01{
+
+//     }
+// }

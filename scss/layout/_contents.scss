@@ -21,7 +21,7 @@
 				&.-parallax_bg{//ここに背景を指定する。
 					// background-image: url(../images/bg/header_bg_s.jpg);
 					@include mq(tb){
-						background-image: url(../images/bg/kenzai02-bg.jpg);
+						background-image: url(../images/bg/spec02-bg.jpg);
 					}
 				}
 			}
@@ -77,14 +77,39 @@
 
 
 
-			&.-d-btnArea{
+			&.-planBtn-area{
 				@include mq(tb){
-					top: 80%;
-					left: 50%;
+					top: 90%;
+					left: 29%;
 					transform: translateX(-50%);
-					width: 35%;
+					width: 25%;
 				}
 			}
+			&.-freeBtn-area{
+				@include mq(tb){
+					top: 78%;
+					left: 32.3%;
+					transform: translateX(-50%);
+					width: 32%;
+				}
+			}
+			&.-niiza_btn01{
+				@include mq(tb){
+					top: 82%;
+					left: 33%;
+					transform: translateX(-50%);
+					width: 25.5%;
+				}
+			}
+			&.-niiza_btn02{
+				@include mq(tb){
+					top: 82%;
+					left: 66.3%;
+					transform: translateX(-50%);
+					width: 25.5%;
+				}
+			}
+
 
 
 			.l-contentsBox--wrapper{

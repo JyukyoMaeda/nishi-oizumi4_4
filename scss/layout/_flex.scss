@@ -292,16 +292,26 @@
 			}
 			.flexItem{
 				a{
-					@include mq(tb-pc1400){
+					padding: 13% 2% 14%;
+					@include mq(tb-pc1000){
 						padding: 9% 2% 8%;
+					}
+					@include mq(tb-pc1400){
+						padding: 7% 2% 6%;
 					}
 				}
 				&.-logoArea{
 					@include mq(tb){
-						width: 10%;
+						width: 14%;
+					}
+					@include mq(tb-pc1000){
+						width: 11%;
 					}
 					@include mq(tb-pc1400){
-						width: 6%;
+						width: 10%;
+					}
+					@include mq(tb-pc1850){
+						width: 8%;
 					}
 				}
 				&.-navArea{
@@ -309,16 +319,20 @@
 					flex-wrap: nowrap;
 					justify-content: right;
 					@include mq(tb){
-						width: calc(100% - 10%);
+						width: calc(100% - 14%);
+					}
+					@include mq(tb-pc1000){
+						width: calc(100% - 11%);
 					}
 					@include mq(tb-pc1400){
-						width: calc(100% - 6%);
+						width: calc(100% - 10%);
+					}
+					@include mq(tb-pc1850){
+						width: calc(100% - 8%);
 					}
 				}
-
 			}
 		}
-
 		&.-navLists{
 			width: 100%;
 			display: flex;
@@ -337,19 +351,19 @@
 					width: 12%;
 					border-radius: 30px;
 					margin-left: 2%;
-					&.--black{
-						background: black;
-					}
-					&.--red{
-						background: red;
-					}
+					// &.--black{
+					// 	background: black;
+					// }
+					// &.--red{
+					// 	background: red;
+					// }
 					a{
 						position: absolute;
 						top: 50%;
 						left: 50%;
 						transform: translate(-50%, -50%);
 						width: 100%;
-						padding: 2%;
+						// padding: 2%;
 					}
 				}
 			}
