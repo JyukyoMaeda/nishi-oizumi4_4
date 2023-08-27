@@ -86,6 +86,12 @@
 				}
 			}
 			&.-freeBtn-area{
+				@include mq(sp){
+					top: 96%;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 80%;
+				}
 				@include mq(tb){
 					top: 78%;
 					left: 32.3%;
@@ -94,6 +100,10 @@
 				}
 			}
 			&.-niiza_btn01{
+				top: 87%;
+				left: 25%;
+				transform: translateX(-50%);
+				width: 45.5%;
 				@include mq(tb){
 					top: 82%;
 					left: 33%;
@@ -102,6 +112,10 @@
 				}
 			}
 			&.-niiza_btn02{
+				top: 87\%;
+				left: 75%;
+				transform: translateX(-50%);
+				width: 45.5%;
 				@include mq(tb){
 					top: 82%;
 					left: 66.3%;

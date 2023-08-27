@@ -550,6 +550,14 @@ img {
     width: 25%;
   }
 }
+@media screen and (max-width: 768px) {
+  .l-contents.-img-bg .l-contentsBox.-freeBtn-area {
+    top: 96%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+  }
+}
 @media screen and (min-width: 767px) {
   .l-contents.-img-bg .l-contentsBox.-freeBtn-area {
     top: 78%;
@@ -558,6 +566,12 @@ img {
     width: 32%;
   }
 }
+.l-contents.-img-bg .l-contentsBox.-niiza_btn01 {
+  top: 87%;
+  left: 25%;
+  transform: translateX(-50%);
+  width: 45.5%;
+}
 @media screen and (min-width: 767px) {
   .l-contents.-img-bg .l-contentsBox.-niiza_btn01 {
     top: 82%;
@@ -565,6 +579,12 @@ img {
     transform: translateX(-50%);
     width: 25.5%;
   }
+}
+.l-contents.-img-bg .l-contentsBox.-niiza_btn02 {
+  top: 87\%;
+  left: 75%;
+  transform: translateX(-50%);
+  width: 45.5%;
 }
 @media screen and (min-width: 767px) {
   .l-contents.-img-bg .l-contentsBox.-niiza_btn02 {
