@@ -49,10 +49,20 @@
         // border: 1px solid white;
         transition: all .5s;
         overflow: hidden;
+        &.-black{
+            img{
+                @include mq(sp){
+                    background: inherit !important;
+                }
+            }
+        }
         img{
             background: $site-color01;
             transition: all .5s;
             z-index: -1;
+            @include mq(sp){
+                background: $site-color01-hover;
+            }
         }
         &::after{
             content: "";

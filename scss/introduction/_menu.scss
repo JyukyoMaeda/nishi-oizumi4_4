@@ -30,7 +30,7 @@
         z-index: 20;
         cursor: pointer;
         pointer-events: auto;
-        color: $main-color--b;
+        color: #fff;
         text-align: center;
         @include mq(tb){
             display: block;
@@ -40,7 +40,7 @@
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 5px;
-            width: 30px;
+            width: 31px;
             display: block;
 
             @include mq(tb){
@@ -77,8 +77,8 @@
             width: 100%;
             margin: 0 auto 9px;
             height: 3px;
-            background: #000;
-            box-shadow: 0px 0px 3px white;//背景色がかぶった際に見やすくするため    
+            background: #fff;
+            box-shadow: 0px 0px 2px black;//背景色がかぶった際に見やすくするため    
             -webkit-transition: all .2s ease-in-out;
             -o-transition: all .2s ease-in-out;
             transition: all .2s ease-in-out;
@@ -106,7 +106,7 @@
                         font-size: 1rem;
                     }
                     &:hover{
-                        background: $main-color--w;
+                        // background: $main-color--w;
                         color: $main-color--b;
                         opacity: 0.8;
                     }
@@ -239,15 +239,17 @@ display: none;
 // .el_humburger span.el_humburger_bar:last-child {
 //     margin-bottom: 0;
 // }
-
+.js_humburgerOpen .l-text.-white {
+    color: #a69a7f;
+}
 .js_humburgerOpen .el_humburger span.el_humburger_bar {
-    background: #000;
+    background: #a69a7f;
 }
 @media screen and (max-width: 840px) {
     .el_humburger span.el_humburger_bar {
         left: 0;
         top: 0;
-        background: #000;
+        background: #a69a7f;
     }
 }
 
